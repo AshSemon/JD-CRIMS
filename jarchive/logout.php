@@ -1,0 +1,10 @@
+<?php
+session_start();
+include('../connection.inc.php');
+include('../function.inc.php');
+unset($_SESSION['JARCHIVE_IS_LOGIN']);
+unset($_SESSION['JARCHIVE_USER']);
+unset($_SESSION['JARCHIVE_USER_NAME']);
+unset($_SESSION['JARCHIVE_ID']);
+redirect('login.php');
+?>
